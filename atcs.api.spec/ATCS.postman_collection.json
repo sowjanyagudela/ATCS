@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "a6a4e631-abf8-4f93-bcee-d7296afbbaf2",
+		"name": "ATCS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"_postman_id": "ff4b0d56-f54b-4885-a207-87372775c72f",
+			"name": "Add Aircraft",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t \"type\": \"CARGO\",\n      \"size\": \"SMALL\"\n}"
+				},
+				"url": "http://localhost:9001/aircraft"
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "fa38d32d-0602-4299-b7d1-de1c27693d67",
+			"name": "Get Aircraft",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://localhost:9001/aircraft"
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "061cfd05-6f62-45d7-89d7-0c6166058399",
+			"name": "Get ApiVersion",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://localhost:9001/api-version"
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "d9fba8a7-6d1d-4cae-924c-0108764519a1",
+			"name": "Deque Aircraft By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://localhost:9001/aircraft/3"
+			},
+			"response": []
+		}
+	]
+}
